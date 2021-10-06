@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */; };
+		04113A80270DEE0F00084662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7F270DEE0F00084662 /* ContentView.swift */; };
+		04113A82270DEE1400084662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A81270DEE1400084662 /* Assets.xcassets */; };
+		04113A85270DEE1400084662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A84270DEE1400084662 /* Preview Assets.xcassets */; };
+		04113A8F270DEE1500084662 /* Streaming_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */; };
+		04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */; };
+		04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04113A8B270DEE1500084662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04113A72270DEE0F00084662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04113A79270DEE0F00084662;
+			remoteInfo = "Streaming Demo";
+		};
+		04113A95270DEE1500084662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04113A72270DEE0F00084662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04113A79270DEE0F00084662;
+			remoteInfo = "Streaming Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04113A7A270DEE0F00084662 /* Streaming Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Streaming Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoApp.swift; sourceTree = "<group>"; };
+		04113A7F270DEE0F00084662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04113A81270DEE1400084662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04113A84270DEE1400084662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Streaming DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoTests.swift; sourceTree = "<group>"; };
+		04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Streaming DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITests.swift; sourceTree = "<group>"; };
+		04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04113A77270DEE0F00084662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A87270DEE1500084662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A91270DEE1500084662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04113A71270DEE0F00084662 = {
+			isa = PBXGroup;
+			children = (
+				04113A7C270DEE0F00084662 /* Streaming Demo */,
+				04113A8D270DEE1500084662 /* Streaming DemoTests */,
+				04113A97270DEE1500084662 /* Streaming DemoUITests */,
+				04113A7B270DEE0F00084662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04113A7B270DEE0F00084662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04113A7A270DEE0F00084662 /* Streaming Demo.app */,
+				04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */,
+				04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04113A7C270DEE0F00084662 /* Streaming Demo */ = {
+			isa = PBXGroup;
+			children = (
+				04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */,
+				04113A7F270DEE0F00084662 /* ContentView.swift */,
+				04113A81270DEE1400084662 /* Assets.xcassets */,
+				04113A83270DEE1400084662 /* Preview Content */,
+			);
+			path = "Streaming Demo";
+			sourceTree = "<group>";
+		};
+		04113A83270DEE1400084662 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04113A84270DEE1400084662 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04113A8D270DEE1500084662 /* Streaming DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */,
+			);
+			path = "Streaming DemoTests";
+			sourceTree = "<group>";
+		};
+		04113A97270DEE1500084662 /* Streaming DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */,
+				04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */,
+			);
+			path = "Streaming DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04113A79270DEE0F00084662 /* Streaming Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming Demo" */;
+			buildPhases = (
+				04113A76270DEE0F00084662 /* Sources */,
+				04113A77270DEE0F00084662 /* Frameworks */,
+				04113A78270DEE0F00084662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Streaming Demo";
+			productName = "Streaming Demo";
+			productReference = 04113A7A270DEE0F00084662 /* Streaming Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04113A89270DEE1500084662 /* Streaming DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoTests" */;
+			buildPhases = (
+				04113A86270DEE1500084662 /* Sources */,
+				04113A87270DEE1500084662 /* Frameworks */,
+				04113A88270DEE1500084662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04113A8C270DEE1500084662 /* PBXTargetDependency */,
+			);
+			name = "Streaming DemoTests";
+			productName = "Streaming DemoTests";
+			productReference = 04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04113A93270DEE1500084662 /* Streaming DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoUITests" */;
+			buildPhases = (
+				04113A90270DEE1500084662 /* Sources */,
+				04113A91270DEE1500084662 /* Frameworks */,
+				04113A92270DEE1500084662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04113A96270DEE1500084662 /* PBXTargetDependency */,
+			);
+			name = "Streaming DemoUITests";
+			productName = "Streaming DemoUITests";
+			productReference = 04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04113A72270DEE0F00084662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					04113A79270DEE0F00084662 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					04113A89270DEE1500084662 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04113A79270DEE0F00084662;
+					};
+					04113A93270DEE1500084662 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 04113A79270DEE0F00084662;
+					};
+				};
+			};
+			buildConfigurationList = 04113A75270DEE0F00084662 /* Build configuration list for PBXProject "Streaming Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04113A71270DEE0F00084662;
+			productRefGroup = 04113A7B270DEE0F00084662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04113A79270DEE0F00084662 /* Streaming Demo */,
+				04113A89270DEE1500084662 /* Streaming DemoTests */,
+				04113A93270DEE1500084662 /* Streaming DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04113A78270DEE0F00084662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04113A85270DEE1400084662 /* Preview Assets.xcassets in Resources */,
+				04113A82270DEE1400084662 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A88270DEE1500084662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A92270DEE1500084662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04113A76270DEE0F00084662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
+				04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A86270DEE1500084662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04113A8F270DEE1500084662 /* Streaming_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04113A90270DEE1500084662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */,
+				04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04113A8C270DEE1500084662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04113A79270DEE0F00084662 /* Streaming Demo */;
+			targetProxy = 04113A8B270DEE1500084662 /* PBXContainerItemProxy */;
+		};
+		04113A96270DEE1500084662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04113A79270DEE0F00084662 /* Streaming Demo */;
+			targetProxy = 04113A95270DEE1500084662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04113A9C270DEE1500084662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04113A9D270DEE1500084662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04113A9F270DEE1500084662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = H924AL34KG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04113AA0270DEE1500084662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = H924AL34KG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04113AA2270DEE1500084662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H924AL34KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streaming Demo.app/Streaming Demo";
+			};
+			name = Debug;
+		};
+		04113AA3270DEE1500084662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H924AL34KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streaming Demo.app/Streaming Demo";
+			};
+			name = Release;
+		};
+		04113AA5270DEE1500084662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H924AL34KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Streaming Demo";
+			};
+			name = Debug;
+		};
+		04113AA6270DEE1500084662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H924AL34KG;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Streaming Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04113A75270DEE0F00084662 /* Build configuration list for PBXProject "Streaming Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04113A9C270DEE1500084662 /* Debug */,
+				04113A9D270DEE1500084662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04113A9F270DEE1500084662 /* Debug */,
+				04113AA0270DEE1500084662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04113AA2270DEE1500084662 /* Debug */,
+				04113AA3270DEE1500084662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04113AA5270DEE1500084662 /* Debug */,
+				04113AA6270DEE1500084662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04113A72270DEE0F00084662 /* Project object */;
+}

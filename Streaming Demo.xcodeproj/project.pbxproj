@@ -14,6 +14,7 @@
 		04113A8F270DEE1500084662 /* Streaming_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */; };
 		04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */; };
 		04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */; };
+		04113AA8270F2C0B00084662 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113AA7270F2C0B00084662 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Streaming DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITests.swift; sourceTree = "<group>"; };
 		04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04113AA7270F2C0B00084662 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				04113A7F270DEE0F00084662 /* ContentView.swift */,
 				04113A81270DEE1400084662 /* Assets.xcassets */,
 				04113A83270DEE1400084662 /* Preview Content */,
+				04113AA7270F2C0B00084662 /* Player.swift */,
 			);
 			path = "Streaming Demo";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
+				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
 				04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

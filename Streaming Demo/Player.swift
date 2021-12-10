@@ -1,27 +1,18 @@
-//
-//  Player.swift
-//  Streaming Demo
-//
-//  Created by Joar Leth on 2021-10-07.
-//
-
 import Foundation
 import AVFoundation
 
 class Player {
     var avPlayer: AVPlayer
-    var isPlaying: Bool
     var avPlayerItem: AVPlayerItem?
     
     init() {
         avPlayer = AVPlayer.init()
-        isPlaying = false
         avPlayerItem = nil
+        NotificationCenter.default.addObserver(self, selector: #selector(Player.handleDidPlayToEnd), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: self.avPlayer.currentItem)
     }
     
     func play() {
         avPlayer.play()
-        isPlaying = true
     }
  
     func play(url: URL) {
@@ -35,18 +26,19 @@ class Player {
         let cookiesArray = HTTPCookieStorage.shared.cookies!
         let cookieOptions = [AVURLAssetHTTPCookiesKey: cookiesArray]
         let urlAsset = AVURLAsset(url: url, options: cookieOptions)
-//        let urlAsset = AVURLAsset(url: url)
         avPlayerItem = AVPlayerItem.init(asset: urlAsset)
         avPlayerItem?.preferredForwardBufferDuration = 18
         avPlayer.replaceCurrentItem(with: avPlayerItem)
         avPlayer.play()
-        isPlaying = true
     }
     
     func pause() {
         if (avPlayer.rate == 1) {
             avPlayer.pause()
         }
-        isPlaying = false
+    }
+
+    @objc func handleDidPlayToEnd() {
+        avPlayer.seek(to: .zero)
     }
 }

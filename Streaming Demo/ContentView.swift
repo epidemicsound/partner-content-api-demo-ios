@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Streaming Demo
-//
-//  Created by Joar Leth on 2021-10-06.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -14,7 +7,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Button("Play") {
-                if (player.isPlaying) {
+                if (player.avPlayer.rate == 1) {
                     player.pause()
                 } else if (player.avPlayerItem != nil) {
                     player.play()

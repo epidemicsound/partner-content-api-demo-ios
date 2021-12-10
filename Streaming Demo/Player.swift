@@ -1,26 +1,41 @@
 import Foundation
 import AVFoundation
 
+struct SignedCookie {
+    let name: String
+    let path: String
+    let value: String
+    let domain: String
+
+    init(cookieString: String, domain: String) {
+        let cookieArray = cookieString.split(separator: "=", maxSplits: 1).map(String.init)
+        name = cookieArray.first ?? ""
+        path = "/"
+        value = cookieArray.last ?? ""
+        self.domain = domain
+    }
+}
+
 class Player {
     var avPlayer: AVPlayer
     var avPlayerItem: AVPlayerItem?
-    
+
     init() {
         avPlayer = AVPlayer.init()
         avPlayerItem = nil
         NotificationCenter.default.addObserver(self, selector: #selector(Player.handleDidPlayToEnd), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: self.avPlayer.currentItem)
     }
-    
+
     func play() {
         avPlayer.play()
     }
  
-    func play(url: URL) {
+    func play(url: URL, signedCookie: SignedCookie) {
         let cookie = HTTPCookie(properties: [
-            .name: "Cloud-CDN-Cookie",
-            .path:"/honesty/",
-            .domain: "hls-investigation.epidemicsite.com",
-            .value: "URLPrefix=aHR0cHM6Ly9obHMtaW52ZXN0aWdhdGlvbi5lcGlkZW1pY3NpdGUuY29tL2hvbmVzdHkv:Expires=1634898182:KeyName=es-platform-dev-signed-url-key-hls-investigation:Signature=4eIs4j_oF6vpogoyg0QFpHtC5n0="
+            .name: signedCookie.name,
+            .domain: signedCookie.domain,
+            .path: signedCookie.path,
+            .value: signedCookie.value
         ])
         HTTPCookieStorage.shared.setCookie(cookie!)
         let cookiesArray = HTTPCookieStorage.shared.cookies!

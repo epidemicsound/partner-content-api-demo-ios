@@ -1,52 +1,76 @@
 //
-//  Player.swift
-//  Streaming Demo
+// This is a sample implementation of an audio player that uses on demand HLS streams with signed cookies
+// on iOS. It uses AVFoundation (https://developer.apple.com/documentation/avfoundation), which takes care
+// of the complexities of HLS, and therefore it would be very similar to an equivalent implementation for
+// playing standard audio files.
 //
-//  Created by Joar Leth on 2021-10-07.
+// This is for example purposes only and is meant to complement the documentation for Epidemic Sound's
+// Partner Content API (https://partner-content-api.epidemicsound.com).
 //
 
 import Foundation
 import AVFoundation
 
+struct SignedCookie {
+    let name: String
+    let path: String
+    let value: String
+    let domain: String
+
+    init(cookieString: String, domain: String) {
+        let cookieArray = cookieString.split(separator: "=", maxSplits: 1).map(String.init)
+        name = cookieArray.first ?? ""
+        path = "/"
+        value = cookieArray.last ?? ""
+        self.domain = domain
+    }
+}
+
 class Player {
     var avPlayer: AVPlayer
-    var isPlaying: Bool
     var avPlayerItem: AVPlayerItem?
-    
+
     init() {
         avPlayer = AVPlayer.init()
-        isPlaying = false
         avPlayerItem = nil
-    }
-    
-    func play() {
-        avPlayer.play()
-        isPlaying = true
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(Player.handleDidPlayToEnd),
+            name: Notification.Name.AVPlayerItemDidPlayToEndTime,
+            object: self.avPlayer.currentItem)
     }
  
-    func play(url: URL) {
+    func play(url: URL, signedCookie: SignedCookie) {
+        // HLS streams consist of playlist manifests and audio segments. To control access to these files,
+        // CDNs use signed cookies. These let the client access all the files with a given url path prefix.
         let cookie = HTTPCookie(properties: [
-            .name: "Cloud-CDN-Cookie",
-            .path:"/honesty/",
-            .domain: "hls-investigation.epidemicsite.com",
-            .value: "URLPrefix=aHR0cHM6Ly9obHMtaW52ZXN0aWdhdGlvbi5lcGlkZW1pY3NpdGUuY29tL2hvbmVzdHkv:Expires=1634898182:KeyName=es-platform-dev-signed-url-key-hls-investigation:Signature=4eIs4j_oF6vpogoyg0QFpHtC5n0="
+            .name: signedCookie.name,
+            .domain: signedCookie.domain,
+            .path: signedCookie.path,
+            .value: signedCookie.value
         ])
         HTTPCookieStorage.shared.setCookie(cookie!)
         let cookiesArray = HTTPCookieStorage.shared.cookies!
         let cookieOptions = [AVURLAssetHTTPCookiesKey: cookiesArray]
         let urlAsset = AVURLAsset(url: url, options: cookieOptions)
-//        let urlAsset = AVURLAsset(url: url)
         avPlayerItem = AVPlayerItem.init(asset: urlAsset)
+        // In content creator apps users often preview short segments of tracks. By setting the preferred
+        // forward buffer duration you can limit unnecessary data usage.
         avPlayerItem?.preferredForwardBufferDuration = 18
         avPlayer.replaceCurrentItem(with: avPlayerItem)
         avPlayer.play()
-        isPlaying = true
     }
-    
+
+    func play() {
+        avPlayer.play()
+    }
+
     func pause() {
-        if (avPlayer.rate == 1) {
-            avPlayer.pause()
-        }
-        isPlaying = false
+        avPlayer.pause()
+    }
+
+    @objc func handleDidPlayToEnd() {
+        // Seek to the beginning so that the track can be played again.
+        avPlayer.seek(to: .zero)
     }
 }

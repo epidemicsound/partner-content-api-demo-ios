@@ -13,17 +13,10 @@ import AVFoundation
 
 struct SignedCookie {
     let name: String
+    let domain: String
     let path: String
     let value: String
-    let domain: String
-
-    init(cookieString: String, domain: String) {
-        let cookieArray = cookieString.split(separator: "=", maxSplits: 1).map(String.init)
-        name = cookieArray.first ?? ""
-        path = "/"
-        value = cookieArray.last ?? ""
-        self.domain = domain
-    }
+    let expires: String
 }
 
 class Player {
@@ -47,7 +40,8 @@ class Player {
             .name: signedCookie.name,
             .domain: signedCookie.domain,
             .path: signedCookie.path,
-            .value: signedCookie.value
+            .value: signedCookie.value,
+            .expires: signedCookie.expires
         ])
         HTTPCookieStorage.shared.setCookie(cookie!)
         let cookiesArray = HTTPCookieStorage.shared.cookies!

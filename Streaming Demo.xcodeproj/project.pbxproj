@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */; };
+		04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */; };
 		04113A80270DEE0F00084662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7F270DEE0F00084662 /* ContentView.swift */; };
 		04113A82270DEE1400084662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A81270DEE1400084662 /* Assets.xcassets */; };
 		04113A85270DEE1400084662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A84270DEE1400084662 /* Preview Assets.xcassets */; };
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		04113A7A270DEE0F00084662 /* Streaming Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Streaming Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoApp.swift; sourceTree = "<group>"; };
+		04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingDemoApp.swift; sourceTree = "<group>"; };
 		04113A7F270DEE0F00084662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04113A81270DEE1400084662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04113A84270DEE1400084662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,21 +96,22 @@
 		04113A7C270DEE0F00084662 /* Streaming Demo */ = {
 			isa = PBXGroup;
 			children = (
-				04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */,
+				04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */,
 				04113A7F270DEE0F00084662 /* ContentView.swift */,
-				04113A81270DEE1400084662 /* Assets.xcassets */,
-				04113A83270DEE1400084662 /* Preview Content */,
 				04113AA7270F2C0B00084662 /* Player.swift */,
+				04113A83270DEE1400084662 /* Resources */,
 			);
 			path = "Streaming Demo";
 			sourceTree = "<group>";
 		};
-		04113A83270DEE1400084662 /* Preview Content */ = {
+		04113A83270DEE1400084662 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04113A81270DEE1400084662 /* Assets.xcassets */,
 				04113A84270DEE1400084662 /* Preview Assets.xcassets */,
+				448D0CEF2784A639005C2E5C /* Constants.swift */,
 			);
-			path = "Preview Content";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		04113A8D270DEE1500084662 /* Streaming DemoTests */ = {
@@ -262,7 +263,7 @@
 			files = (
 				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
 				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
-				04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */,
+				04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -452,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

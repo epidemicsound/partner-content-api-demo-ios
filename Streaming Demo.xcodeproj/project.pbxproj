@@ -17,6 +17,8 @@
 		04113AA8270F2C0B00084662 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113AA7270F2C0B00084662 /* Player.swift */; };
 		448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CE92784A296005C2E5C /* AudioContentProvider.swift */; };
 		448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */; };
+		448D0CF02784A639005C2E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEF2784A639005C2E5C /* Constants.swift */; };
+		448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF32784B055005C2E5C /* TrackResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		04113AA7270F2C0B00084662 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		448D0CE92784A296005C2E5C /* AudioContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioContentProvider.swift; sourceTree = "<group>"; };
 		448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedCookie.swift; sourceTree = "<group>"; };
+		448D0CEF2784A639005C2E5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		448D0CF32784B055005C2E5C /* TrackResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */,
+				448D0CF32784B055005C2E5C /* TrackResource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,8 +291,10 @@
 				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
 				448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */,
 				448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */,
+				448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */,
 				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
 				04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */,
+				448D0CF02784A639005C2E5C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

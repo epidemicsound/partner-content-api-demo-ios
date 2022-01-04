@@ -20,12 +20,10 @@ struct SignedCookie {
 }
 
 class Player {
-    var avPlayer: AVPlayer
-    var avPlayerItem: AVPlayerItem?
+    private (set) var avPlayer: AVPlayer
 
     init() {
         avPlayer = AVPlayer.init()
-        avPlayerItem = nil
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(Player.handleDidPlayToEnd),
@@ -36,21 +34,25 @@ class Player {
     func play(url: URL, signedCookie: SignedCookie) {
         // HLS streams consist of playlist manifests and audio segments. To control access to these files,
         // CDNs use signed cookies. These let the client access all the files with a given url path prefix.
-        let cookie = HTTPCookie(properties: [
+        guard let cookie = HTTPCookie(properties: [
             .name: signedCookie.name,
             .domain: signedCookie.domain,
             .path: signedCookie.path,
             .value: signedCookie.value,
             .expires: signedCookie.expires
-        ])
-        HTTPCookieStorage.shared.setCookie(cookie!)
-        let cookiesArray = HTTPCookieStorage.shared.cookies!
+        ]) else {
+            return
+        }
+        HTTPCookieStorage.shared.setCookie(cookie)
+        guard let cookiesArray = HTTPCookieStorage.shared.cookies else {
+            return
+        }
         let cookieOptions = [AVURLAssetHTTPCookiesKey: cookiesArray]
         let urlAsset = AVURLAsset(url: url, options: cookieOptions)
-        avPlayerItem = AVPlayerItem.init(asset: urlAsset)
+        let avPlayerItem = AVPlayerItem.init(asset: urlAsset)
         // In content creator apps users often preview short segments of tracks. By setting the preferred
         // forward buffer duration you can limit unnecessary data usage.
-        avPlayerItem?.preferredForwardBufferDuration = 18
+        avPlayerItem.preferredForwardBufferDuration = 18
         avPlayer.replaceCurrentItem(with: avPlayerItem)
         avPlayer.play()
     }

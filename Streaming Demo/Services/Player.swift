@@ -1,11 +1,7 @@
 ///
-/// This is a sample implementation of an audio player that uses on demand HLS streams with signed cookies
-/// on iOS. It uses AVFoundation (https://developer.apple.com/documentation/avfoundation), which takes care
-/// of the complexities of HLS, and therefore it would be very similar to an equivalent implementation for
-/// playing standard audio files.
-///
-/// This is for example purposes only and is meant to complement the documentation for Epidemic Sound's
-/// Partner Content API (https://partner-content-api.epidemicsound.com).
+/// This is a sample implementation of an audio player for example purposes only, and is meant to complement
+/// the documentation for Epidemic Sound's Partner Content API
+/// (https://partner-content-api.epidemicsound.com).
 ///
 
 import AVFoundation

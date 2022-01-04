@@ -20,12 +20,10 @@ struct ContentView: View {
             Spacer()
                 .frame(height: 60)
 
-            buttonView(label: "Play track one", imageName: "play.fill") {
-                viewModel.play(track: Tracks.trackOne)
-            }
-
-            buttonView(label: "Play track two", imageName: "play.fill") {
-                viewModel.play(track: Tracks.trackTwo)
+            ForEach(viewModel.tracks) { track in
+                buttonView(label: "Play \(track.name)", imageName: "play.fill") {
+                    viewModel.play(track: track)
+                }
             }
 
             buttonView(label: "Pause all", imageName: "pause.fill") {

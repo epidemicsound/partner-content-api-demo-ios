@@ -7,8 +7,7 @@ struct ContentViewModel {
     private let audioContentProvider = AudioContentProvider()
 
     func play(track: TrackResource) {
-        audioContentProvider.persist(cookie: track.signedCookie)
-        guard let audioContent = audioContentProvider.avItem(for: track.url) else {
+        guard let audioContent = audioContentProvider.avItem(for: track) else {
             return
         }
         player.play(audioContent)

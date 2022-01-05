@@ -1,7 +1,7 @@
 import XCTest
-@testable import Streaming_Demo
+@testable import App
 
-class Streaming_DemoTests: XCTestCase {
+class AppTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

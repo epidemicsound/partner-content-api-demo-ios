@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */; };
+		04113A7E270DEE0F00084662 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* DemoApp.swift */; };
 		04113A80270DEE0F00084662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7F270DEE0F00084662 /* ContentView.swift */; };
 		04113A82270DEE1400084662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A81270DEE1400084662 /* Assets.xcassets */; };
 		04113A85270DEE1400084662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A84270DEE1400084662 /* Preview Assets.xcassets */; };
-		04113A8F270DEE1500084662 /* Streaming_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */; };
-		04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */; };
-		04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */; };
+		04113A8F270DEE1500084662 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A8E270DEE1500084662 /* AppTests.swift */; };
+		04113A99270DEE1500084662 /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A98270DEE1500084662 /* AppUITests.swift */; };
+		04113A9B270DEE1500084662 /* AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A9A270DEE1500084662 /* AppUITestsLaunchTests.swift */; };
 		04113AA8270F2C0B00084662 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113AA7270F2C0B00084662 /* Player.swift */; };
 		448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CE92784A296005C2E5C /* AudioContentProvider.swift */; };
 		448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */; };
@@ -28,28 +28,28 @@
 			containerPortal = 04113A72270DEE0F00084662 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04113A79270DEE0F00084662;
-			remoteInfo = "Streaming Demo";
+			remoteInfo = "App";
 		};
 		04113A95270DEE1500084662 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04113A72270DEE0F00084662 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 04113A79270DEE0F00084662;
-			remoteInfo = "Streaming Demo";
+			remoteInfo = "App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04113A7A270DEE0F00084662 /* Streaming Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Streaming Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingDemoApp.swift; sourceTree = "<group>"; };
+		04113A7A270DEE0F00084662 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A7D270DEE0F00084662 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		04113A7F270DEE0F00084662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04113A81270DEE1400084662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04113A84270DEE1400084662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Streaming DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoTests.swift; sourceTree = "<group>"; };
-		04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Streaming DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITests.swift; sourceTree = "<group>"; };
-		04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04113A8A270DEE1500084662 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A8E270DEE1500084662 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		04113A94270DEE1500084662 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04113A98270DEE1500084662 /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
+		04113A9A270DEE1500084662 /* AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04113AA7270F2C0B00084662 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		448D0CE92784A296005C2E5C /* AudioContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioContentProvider.swift; sourceTree = "<group>"; };
 		448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedCookie.swift; sourceTree = "<group>"; };
@@ -86,9 +86,9 @@
 		04113A71270DEE0F00084662 = {
 			isa = PBXGroup;
 			children = (
-				04113A7C270DEE0F00084662 /* Streaming Demo */,
-				04113A8D270DEE1500084662 /* Streaming DemoTests */,
-				04113A97270DEE1500084662 /* Streaming DemoUITests */,
+				04113A7C270DEE0F00084662 /* App */,
+				04113A8D270DEE1500084662 /* AppTests */,
+				04113A97270DEE1500084662 /* AppUITests */,
 				04113A7B270DEE0F00084662 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,24 +96,24 @@
 		04113A7B270DEE0F00084662 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04113A7A270DEE0F00084662 /* Streaming Demo.app */,
-				04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */,
-				04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */,
+				04113A7A270DEE0F00084662 /* App.app */,
+				04113A8A270DEE1500084662 /* AppTests.xctest */,
+				04113A94270DEE1500084662 /* AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04113A7C270DEE0F00084662 /* Streaming Demo */ = {
+		04113A7C270DEE0F00084662 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */,
+				04113A7D270DEE0F00084662 /* DemoApp.swift */,
 				04113A7F270DEE0F00084662 /* ContentView.swift */,
 				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
 				448D0CEE2784A301005C2E5C /* Models */,
 				448D0CEB2784A2E5005C2E5C /* Services */,
 				04113A83270DEE1400084662 /* Resources */,
 			);
-			path = "Streaming Demo";
+			path = App;
 			sourceTree = "<group>";
 		};
 		04113A83270DEE1400084662 /* Resources */ = {
@@ -126,21 +126,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		04113A8D270DEE1500084662 /* Streaming DemoTests */ = {
+		04113A8D270DEE1500084662 /* AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				04113A8E270DEE1500084662 /* Streaming_DemoTests.swift */,
+				04113A8E270DEE1500084662 /* AppTests.swift */,
 			);
-			path = "Streaming DemoTests";
+			path = AppTests;
 			sourceTree = "<group>";
 		};
-		04113A97270DEE1500084662 /* Streaming DemoUITests */ = {
+		04113A97270DEE1500084662 /* AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */,
-				04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */,
+				04113A98270DEE1500084662 /* AppUITests.swift */,
+				04113A9A270DEE1500084662 /* AppUITestsLaunchTests.swift */,
 			);
-			path = "Streaming DemoUITests";
+			path = AppUITests;
 			sourceTree = "<group>";
 		};
 		448D0CEB2784A2E5005C2E5C /* Services */ = {
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04113A79270DEE0F00084662 /* Streaming Demo */ = {
+		04113A79270DEE0F00084662 /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming Demo" */;
+			buildConfigurationList = 04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				04113A76270DEE0F00084662 /* Sources */,
 				04113A77270DEE0F00084662 /* Frameworks */,
@@ -176,14 +176,14 @@
 			);
 			dependencies = (
 			);
-			name = "Streaming Demo";
-			productName = "Streaming Demo";
-			productReference = 04113A7A270DEE0F00084662 /* Streaming Demo.app */;
+			name = App;
+			productName = "App";
+			productReference = 04113A7A270DEE0F00084662 /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		04113A89270DEE1500084662 /* Streaming DemoTests */ = {
+		04113A89270DEE1500084662 /* AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoTests" */;
+			buildConfigurationList = 04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "AppTests" */;
 			buildPhases = (
 				04113A86270DEE1500084662 /* Sources */,
 				04113A87270DEE1500084662 /* Frameworks */,
@@ -194,14 +194,14 @@
 			dependencies = (
 				04113A8C270DEE1500084662 /* PBXTargetDependency */,
 			);
-			name = "Streaming DemoTests";
-			productName = "Streaming DemoTests";
-			productReference = 04113A8A270DEE1500084662 /* Streaming DemoTests.xctest */;
+			name = AppTests;
+			productName = "AppTests";
+			productReference = 04113A8A270DEE1500084662 /* AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04113A93270DEE1500084662 /* Streaming DemoUITests */ = {
+		04113A93270DEE1500084662 /* AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoUITests" */;
+			buildConfigurationList = 04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "AppUITests" */;
 			buildPhases = (
 				04113A90270DEE1500084662 /* Sources */,
 				04113A91270DEE1500084662 /* Frameworks */,
@@ -212,9 +212,9 @@
 			dependencies = (
 				04113A96270DEE1500084662 /* PBXTargetDependency */,
 			);
-			name = "Streaming DemoUITests";
-			productName = "Streaming DemoUITests";
-			productReference = 04113A94270DEE1500084662 /* Streaming DemoUITests.xctest */;
+			name = AppUITests;
+			productName = "AppUITests";
+			productReference = 04113A94270DEE1500084662 /* AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04113A75270DEE0F00084662 /* Build configuration list for PBXProject "Streaming Demo" */;
+			buildConfigurationList = 04113A75270DEE0F00084662 /* Build configuration list for PBXProject "App" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,9 +253,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04113A79270DEE0F00084662 /* Streaming Demo */,
-				04113A89270DEE1500084662 /* Streaming DemoTests */,
-				04113A93270DEE1500084662 /* Streaming DemoUITests */,
+				04113A79270DEE0F00084662 /* App */,
+				04113A89270DEE1500084662 /* AppTests */,
+				04113A93270DEE1500084662 /* AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 				448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */,
 				448D0CF22784A8D0005C2E5C /* ContentViewModel.swift in Sources */,
 				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
-				04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */,
+				04113A7E270DEE0F00084662 /* DemoApp.swift in Sources */,
 				448D0CF02784A639005C2E5C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04113A8F270DEE1500084662 /* Streaming_DemoTests.swift in Sources */,
+				04113A8F270DEE1500084662 /* AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,8 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */,
-				04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */,
+				04113A9B270DEE1500084662 /* AppUITestsLaunchTests.swift in Sources */,
+				04113A99270DEE1500084662 /* AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		04113A8C270DEE1500084662 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04113A79270DEE0F00084662 /* Streaming Demo */;
+			target = 04113A79270DEE0F00084662 /* App */;
 			targetProxy = 04113A8B270DEE1500084662 /* PBXContainerItemProxy */;
 		};
 		04113A96270DEE1500084662 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04113A79270DEE0F00084662 /* Streaming Demo */;
+			target = 04113A79270DEE0F00084662 /* App */;
 			targetProxy = 04113A95270DEE1500084662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -458,7 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -473,8 +473,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.partner-content-api-demo-ios.App";
+				PRODUCT_NAME = App;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -503,8 +503,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.partner-content-api-demo-ios.App";
+				PRODUCT_NAME = App;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,12 +527,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streaming Demo.app/Streaming Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Debug;
 		};
@@ -552,12 +552,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Streaming Demo.app/Streaming Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;
 		};
@@ -575,12 +575,12 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Streaming Demo";
+				TEST_TARGET_NAME = App;
 			};
 			name = Debug;
 		};
@@ -598,19 +598,19 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.Streaming-DemoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.epidemicsound.streaming-demo.AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Streaming Demo";
+				TEST_TARGET_NAME = App;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04113A75270DEE0F00084662 /* Build configuration list for PBXProject "Streaming Demo" */ = {
+		04113A75270DEE0F00084662 /* Build configuration list for PBXProject "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04113A9C270DEE1500084662 /* Debug */,
@@ -619,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming Demo" */ = {
+		04113A9E270DEE1500084662 /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04113A9F270DEE1500084662 /* Debug */,
@@ -628,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoTests" */ = {
+		04113AA1270DEE1500084662 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04113AA2270DEE1500084662 /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "Streaming DemoUITests" */ = {
+		04113AA4270DEE1500084662 /* Build configuration list for PBXNativeTarget "AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04113AA5270DEE1500084662 /* Debug */,

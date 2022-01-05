@@ -1,10 +1,3 @@
-//
-//  Streaming_DemoUITestsLaunchTests.swift
-//  Streaming DemoUITests
-//
-//  Created by Joar Leth on 2021-10-06.
-//
-
 import XCTest
 
 class Streaming_DemoUITestsLaunchTests: XCTestCase {

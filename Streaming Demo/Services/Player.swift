@@ -1,9 +1,3 @@
-///
-/// This is a sample implementation of an audio player for example purposes only, and is meant to complement
-/// the documentation for Epidemic Sound's Partner Content API
-/// (https://partner-content-api.epidemicsound.com).
-///
-
 import AVFoundation
 
 class Player {

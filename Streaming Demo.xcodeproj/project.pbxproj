@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */; };
+		04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */; };
 		04113A80270DEE0F00084662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A7F270DEE0F00084662 /* ContentView.swift */; };
 		04113A82270DEE1400084662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A81270DEE1400084662 /* Assets.xcassets */; };
 		04113A85270DEE1400084662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04113A84270DEE1400084662 /* Preview Assets.xcassets */; };
@@ -15,6 +15,11 @@
 		04113A99270DEE1500084662 /* Streaming_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */; };
 		04113A9B270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */; };
 		04113AA8270F2C0B00084662 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04113AA7270F2C0B00084662 /* Player.swift */; };
+		448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CE92784A296005C2E5C /* AudioContentProvider.swift */; };
+		448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */; };
+		448D0CF02784A639005C2E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEF2784A639005C2E5C /* Constants.swift */; };
+		448D0CF22784A8D0005C2E5C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */; };
+		448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF32784B055005C2E5C /* TrackResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		04113A7A270DEE0F00084662 /* Streaming Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Streaming Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoApp.swift; sourceTree = "<group>"; };
+		04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamingDemoApp.swift; sourceTree = "<group>"; };
 		04113A7F270DEE0F00084662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04113A81270DEE1400084662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04113A84270DEE1400084662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +51,11 @@
 		04113A98270DEE1500084662 /* Streaming_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITests.swift; sourceTree = "<group>"; };
 		04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streaming_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04113AA7270F2C0B00084662 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		448D0CE92784A296005C2E5C /* AudioContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioContentProvider.swift; sourceTree = "<group>"; };
+		448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedCookie.swift; sourceTree = "<group>"; };
+		448D0CEF2784A639005C2E5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		448D0CF32784B055005C2E5C /* TrackResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,21 +106,24 @@
 		04113A7C270DEE0F00084662 /* Streaming Demo */ = {
 			isa = PBXGroup;
 			children = (
-				04113A7D270DEE0F00084662 /* Streaming_DemoApp.swift */,
+				04113A7D270DEE0F00084662 /* StreamingDemoApp.swift */,
 				04113A7F270DEE0F00084662 /* ContentView.swift */,
-				04113A81270DEE1400084662 /* Assets.xcassets */,
-				04113A83270DEE1400084662 /* Preview Content */,
-				04113AA7270F2C0B00084662 /* Player.swift */,
+				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
+				448D0CEE2784A301005C2E5C /* Models */,
+				448D0CEB2784A2E5005C2E5C /* Services */,
+				04113A83270DEE1400084662 /* Resources */,
 			);
 			path = "Streaming Demo";
 			sourceTree = "<group>";
 		};
-		04113A83270DEE1400084662 /* Preview Content */ = {
+		04113A83270DEE1400084662 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04113A81270DEE1400084662 /* Assets.xcassets */,
 				04113A84270DEE1400084662 /* Preview Assets.xcassets */,
+				448D0CEF2784A639005C2E5C /* Constants.swift */,
 			);
-			path = "Preview Content";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		04113A8D270DEE1500084662 /* Streaming DemoTests */ = {
@@ -128,6 +141,24 @@
 				04113A9A270DEE1500084662 /* Streaming_DemoUITestsLaunchTests.swift */,
 			);
 			path = "Streaming DemoUITests";
+			sourceTree = "<group>";
+		};
+		448D0CEB2784A2E5005C2E5C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04113AA7270F2C0B00084662 /* Player.swift */,
+				448D0CE92784A296005C2E5C /* AudioContentProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		448D0CEE2784A301005C2E5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */,
+				448D0CF32784B055005C2E5C /* TrackResource.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
+				448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */,
+				448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */,
+				448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */,
+				448D0CF22784A8D0005C2E5C /* ContentViewModel.swift in Sources */,
 				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
-				04113A7E270DEE0F00084662 /* Streaming_DemoApp.swift in Sources */,
+				04113A7E270DEE0F00084662 /* StreamingDemoApp.swift in Sources */,
+				448D0CF02784A639005C2E5C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -452,7 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Streaming Demo/Resources\"";
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

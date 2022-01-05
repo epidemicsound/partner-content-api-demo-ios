@@ -1,5 +1,5 @@
 //
-//  Streaming_DemoApp.swift
+//  StreamingDemoApp.swift
 //  Streaming Demo
 //
 //  Created by Joar Leth on 2021-10-06.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Streaming_DemoApp: App {
+struct StreamingDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

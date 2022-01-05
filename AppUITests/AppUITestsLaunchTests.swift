@@ -1,6 +1,6 @@
 import XCTest
 
-class Streaming_DemoUITestsLaunchTests: XCTestCase {
+class AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("Streaming Demo")
+                Text("HLS Demo")
                     .font(.title)
                 Spacer()
             }

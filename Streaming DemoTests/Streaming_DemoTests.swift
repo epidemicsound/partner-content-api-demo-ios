@@ -1,10 +1,3 @@
-//
-//  Streaming_DemoTests.swift
-//  Streaming DemoTests
-//
-//  Created by Joar Leth on 2021-10-06.
-//
-
 import XCTest
 @testable import Streaming_Demo
 

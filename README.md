@@ -1,4 +1,4 @@
-# Partner Content API iOS Demo
+# Partner Content API Demo (iOS)
 
 This is a simple SwiftUI demo application capable of playing HLS audio
 streams. It is built for example purposes and is meant to complement the

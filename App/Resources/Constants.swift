@@ -6,24 +6,24 @@ enum Tracks {
     static let trackOne = TrackResource(
         id: 1,
         name: "track one",
-        url: URL(string: "https://hls-investigation.epidemicsite.com/hls/v1/U8aM5YiRsM/6d530410bf8b25ac7fc9ffdbeb842d70/master.m3u8")!,
+        url: URL(string: "https://hls.epidemicsound.com/hls/v1/U8aM5YiRsM/6d530410bf8b25ac7fc9ffdbeb842d70/master.m3u8")!,
         signedCookie: SignedCookie(
             name: "Cloud-CDN-Cookie",
-            domain:  "hls-investigation.epidemicsite.com",
+            domain:  "hls.epidemicsound.com",
             path: "/",
-            value: "URLPrefix=aHR0cHM6Ly9obHMtaW52ZXN0aWdhdGlvbi5lcGlkZW1pY3NpdGUuY29tL2hscy92MS9VOGFNNVlpUnNNLzZkNTMwNDEwYmY4YjI1YWM3ZmM5ZmZkYmViODQyZDcw:Expires=1671841598:KeyName=es-platform-dev-signed-url-key-hls-investigation:Signature=BRLH59OkUc7K3N-qDUC-7yHXBOY=",
-            expires: "2022-12-24T00:26:38Z"
+            value: "URLPrefix=aHR0cHM6Ly9obHMuZXBpZGVtaWNzb3VuZC5jb20vaGxzL3YxL1U4YU01WWlSc00vNmQ1MzA0MTBiZjhiMjVhYzdmYzlmZmRiZWI4NDJkNzA=:Expires=1957277314:KeyName=es-platform-prod-secret-signing-key-hls:Signature=n8AjXZG36U-ipxpfib0L1DsbYEg=",
+            expires: "2032-01-09T16:08:34Z"
         )!)
 
     static let trackTwo = TrackResource(
         id: 2,
         name: "track two",
-        url: URL(string: "https://hls-investigation.epidemicsite.com/hls/v1/f2rtAq8RaC/80a796cab4e059fc2d28b0b4a3b11a4d/master.m3u8")!,
+        url: URL(string: "https://hls.epidemicsound.com/hls/v1/f2rtAq8RaC/80a796cab4e059fc2d28b0b4a3b11a4d/master.m3u8")!,
         signedCookie: SignedCookie(
             name: "Cloud-CDN-Cookie",
-            domain:  "hls-investigation.epidemicsite.com",
+            domain:  "hls.epidemicsound.com",
             path: "/",
-            value: "URLPrefix=aHR0cHM6Ly9obHMtaW52ZXN0aWdhdGlvbi5lcGlkZW1pY3NpdGUuY29tL2hscy92MS9mMnJ0QXE4UmFDLzgwYTc5NmNhYjRlMDU5ZmMyZDI4YjBiNGEzYjExYTRk:Expires=1671841863:KeyName=es-platform-dev-signed-url-key-hls-investigation:Signature=oofBkNsqR4BIx-zdiP4WIur9qe4=",
-            expires: "2022-12-24T00:31:03Z"
+            value: "URLPrefix=aHR0cHM6Ly9obHMuZXBpZGVtaWNzb3VuZC5jb20vaGxzL3YxL2YycnRBcThSYUMvODBhNzk2Y2FiNGUwNTlmYzJkMjhiMGI0YTNiMTFhNGQ=:Expires=1957277140:KeyName=es-platform-prod-secret-signing-key-hls:Signature=BAKVUgWrSR-DDn4Wyq_HbkqJZl4=",
+            expires: "2032-01-09T16:05:40Z"
         )!)
 }

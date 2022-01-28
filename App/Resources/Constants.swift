@@ -4,7 +4,7 @@ import Foundation
 /// Partner Content API for proper use (https://partner-content-api.epidemicsound.com).
 enum Tracks {
     static let trackOne = TrackResource(
-        id: 1,
+        id: "1",
         name: "track one",
         url: URL(string: "https://hls.epidemicsound.com/hls/v1/U8aM5YiRsM/6d530410bf8b25ac7fc9ffdbeb842d70/master.m3u8")!,
         signedCookie: SignedCookie(
@@ -16,7 +16,7 @@ enum Tracks {
         )!)
 
     static let trackTwo = TrackResource(
-        id: 2,
+        id: "2",
         name: "track two",
         url: URL(string: "https://hls.epidemicsound.com/hls/v1/f2rtAq8RaC/80a796cab4e059fc2d28b0b4a3b11a4d/master.m3u8")!,
         signedCookie: SignedCookie(

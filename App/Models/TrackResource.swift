@@ -1,7 +1,7 @@
 import Foundation
 
 struct TrackResource: Identifiable {
-    typealias Identifier = Int
+    typealias Identifier = String
 
     let id: Identifier
     let name: String

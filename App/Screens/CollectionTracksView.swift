@@ -18,13 +18,17 @@ struct CollectionTracksView: View {
     }
 
     @ViewBuilder func trackCellView(for track: Track) -> some View {
-        HStack(spacing: 16) {
-            trackImage(for: track)
-            Text(track.title)
-                .font(Font.title3)
-            Spacer()
+        Button {
+            viewModel.didSelectTrack(track: track)
+        } label: {
+            HStack(spacing: 16) {
+                trackImage(for: track)
+                Text(track.title)
+                    .font(Font.title3)
+                Spacer()
+            }
+            .padding(.horizontal)
         }
-        .padding(.horizontal)
     }
 
     @ViewBuilder func trackImage(for track: Track) -> some View {

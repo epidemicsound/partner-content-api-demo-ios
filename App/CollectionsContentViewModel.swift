@@ -5,18 +5,32 @@ class CollectionsContentViewModel: ObservableObject {
     @Published var subTitle = "0"
     @Published var collectionsResponse: CollectionsResponse? = nil
     
+    init() {
+        getCollections()
+    }
+    
     func getCollections() {
         PartnerContentAPI().getCollections(
             collectionsCompletionHandler: {
                 collectionsResponse, error in
                 
+
                 if let collectionsResponse = collectionsResponse {
                     print(collectionsResponse)
-                    self.collectionsResponse = collectionsResponse
+                    
+                    DispatchQueue.main.async {
+                        self.collectionsResponse = collectionsResponse
+                    }
+                    
+                    
                     print("loaded")
                     print(self.collectionsResponse)
                 }
             }
         )
     }
+    func userDidSelectCollection(collectionId: String) {
+        print(collectionId)
+    }
+    
 }

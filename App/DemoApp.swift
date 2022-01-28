@@ -5,8 +5,7 @@ struct DemoApp: App {
     var viewModel = CollectionsContentViewModel()
     var body: some Scene {
         WindowGroup {
-            CollectionsContentView()
-                .environmentObject(viewModel)
+            CollectionsContentView(viewModel: viewModel)
         }
     }
 }

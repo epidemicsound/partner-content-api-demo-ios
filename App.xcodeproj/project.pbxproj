@@ -192,11 +192,11 @@
 			isa = PBXGroup;
 			children = (
 				A3D0D69627A430870043FA65 /* CollectionTracksView.swift */,
+				A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */,
 				04938FB727A3F1BA003254E1 /* CollectionsContentView.swift */,
 				04938FB927A3F28A003254E1 /* CollectionsContentViewModel.swift */,
 				04113A7F270DEE0F00084662 /* ContentView.swift */,
 				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
-				A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";

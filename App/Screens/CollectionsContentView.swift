@@ -5,30 +5,38 @@ struct CollectionsContentView: View {
     
     var body: some View {
         NavigationView {
-        ScrollView {
-            Text(viewModel.content)
-                .font(.title).bold()
-                .border(Color.orange)
-            
-            VStack() {
-                ForEach(viewModel.collectionsResponse?.collections ?? [Collection]()) { collection in
-//                    Button(collection.name, action: {
-//                        viewModel.userDidSelectCollection(collectionId: collection.id)
-//                    })
-                    NavigationLink(destination: CollectionTracksView(
-                        viewModel: viewModel.createCollectionTracksViewModel(for: collection)
-                    ), label: {
-                        Text(collection.name)
-                    })
-                            
-                    }
-            }
-            
+            ScrollView {
+                VStack() {
+                    Spacer()
+                        .frame(height: 24)
 
-        }
+                    let collections = viewModel.collectionsResponse?.collections ?? [Collection]()
+
+                    ForEach(collections) { collection in
+                        collectionCellView(for: collection)
+                    }
+                }
+            }
+            .foregroundColor(Color.white)
+            .background(Color.black.edgesIgnoringSafeArea(.all))
+            .navigationTitle(viewModel.content)
         }
     }
-    
+
+    @ViewBuilder
+    func collectionCellView(for collection: Collection) -> some View {
+        NavigationLink(
+            destination: CollectionTracksView(
+                viewModel: viewModel.createCollectionTracksViewModel(for: collection)
+            ), label: {
+                HStack {
+                    Text(collection.name)
+                        .font(Font.title3)
+                    Spacer()
+                }
+                .padding()
+            })
+    }
 }
 
 struct CollectionsContentView_Previews: PreviewProvider {

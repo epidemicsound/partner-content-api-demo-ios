@@ -1,6 +1,6 @@
 import Foundation
 
-struct Track: Decodable {
+struct Track: Decodable, Identifiable {
     let id: String
     let title: String
     let images: Images

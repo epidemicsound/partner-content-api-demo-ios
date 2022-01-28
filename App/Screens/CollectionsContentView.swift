@@ -15,7 +15,9 @@ struct CollectionsContentView: View {
 //                    Button(collection.name, action: {
 //                        viewModel.userDidSelectCollection(collectionId: collection.id)
 //                    })
-                    NavigationLink(destination: Text(collection.id), label: {
+                    NavigationLink(destination: CollectionTracksView(
+                        viewModel: viewModel.createCollectionTracksViewModel(for: collection)
+                    ), label: {
                         Text(collection.name)
                     })
                             

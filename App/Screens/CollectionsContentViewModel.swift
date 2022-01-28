@@ -33,4 +33,11 @@ class CollectionsContentViewModel: ObservableObject {
         print(collectionId)
     }
     
+    func createCollectionTracksViewModel( for collection: Collection) -> CollectionTracksViewModel {
+
+        return CollectionTracksViewModel(collectionTitle: collection.name, tracks: collection.tracks)
+        
+        
+    }
+    
 }

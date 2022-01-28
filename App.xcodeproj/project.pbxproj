@@ -26,6 +26,8 @@
 		448D0CF02784A639005C2E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEF2784A639005C2E5C /* Constants.swift */; };
 		448D0CF22784A8D0005C2E5C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */; };
 		448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF32784B055005C2E5C /* TrackResource.swift */; };
+		A3D0D69727A430870043FA65 /* CollectionTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0D69627A430870043FA65 /* CollectionTracksView.swift */; };
+		A3D0D69A27A431FD0043FA65 /* CollectionTracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		448D0CEF2784A639005C2E5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		448D0CF32784B055005C2E5C /* TrackResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResource.swift; sourceTree = "<group>"; };
+		A3D0D69627A430870043FA65 /* CollectionTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTracksView.swift; sourceTree = "<group>"; };
+		A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTracksViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +124,10 @@
 			children = (
 				04938FBB27A3F34D003254E1 /* API */,
 				04113A7D270DEE0F00084662 /* DemoApp.swift */,
-				04113A7F270DEE0F00084662 /* ContentView.swift */,
-				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
+				A3D0D69827A430C80043FA65 /* Screens */,
 				448D0CEE2784A301005C2E5C /* Models */,
 				448D0CEB2784A2E5005C2E5C /* Services */,
 				04113A83270DEE1400084662 /* Resources */,
-				04938FB727A3F1BA003254E1 /* CollectionsContentView.swift */,
-				04938FB927A3F28A003254E1 /* CollectionsContentViewModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,6 +186,19 @@
 				04938FC227A40045003254E1 /* Track.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A3D0D69827A430C80043FA65 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A3D0D69627A430870043FA65 /* CollectionTracksView.swift */,
+				04938FB727A3F1BA003254E1 /* CollectionsContentView.swift */,
+				04938FB927A3F28A003254E1 /* CollectionsContentViewModel.swift */,
+				04113A7F270DEE0F00084662 /* ContentView.swift */,
+				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
+				A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +341,10 @@
 				04113AA8270F2C0B00084662 /* Player.swift in Sources */,
 				04938FBD27A3F378003254E1 /* PartnerContentAPI.swift in Sources */,
 				04113A7E270DEE0F00084662 /* DemoApp.swift in Sources */,
+				A3D0D69A27A431FD0043FA65 /* CollectionTracksViewModel.swift in Sources */,
 				04938FBA27A3F28A003254E1 /* CollectionsContentViewModel.swift in Sources */,
 				04938FBF27A3FCD2003254E1 /* CollectionsResponse.swift in Sources */,
+				A3D0D69727A430870043FA65 /* CollectionTracksView.swift in Sources */,
 				448D0CF02784A639005C2E5C /* Constants.swift in Sources */,
 				04938FC327A40045003254E1 /* Track.swift in Sources */,
 			);

@@ -5,10 +5,13 @@ struct DemoApp: App {
 
     init() {
         // Format navigation bar appearance
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
+        UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().tintColor = UIColor.white
     }
 

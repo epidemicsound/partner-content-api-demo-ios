@@ -1,8 +1,9 @@
 import SwiftUI
+import AppAuthCore
+import AppAuth
 
 @main
 struct DemoApp: App {
-
     init() {
         // Format navigation bar appearance
         let appearance = UINavigationBarAppearance()

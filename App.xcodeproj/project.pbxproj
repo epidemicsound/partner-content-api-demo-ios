@@ -22,6 +22,8 @@
 		04938FBF27A3FCD2003254E1 /* CollectionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04938FBE27A3FCD2003254E1 /* CollectionsResponse.swift */; };
 		04938FC127A3FDFF003254E1 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04938FC027A3FDFF003254E1 /* Collection.swift */; };
 		04938FC327A40045003254E1 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04938FC227A40045003254E1 /* Track.swift */; };
+		407A61E427CD3FC900A2A27B /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 407A61E327CD3FC900A2A27B /* AppAuth */; };
+		407A61E627CD3FC900A2A27B /* AppAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 407A61E527CD3FC900A2A27B /* AppAuthCore */; };
 		448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CE92784A296005C2E5C /* AudioContentProvider.swift */; };
 		448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */; };
 		448D0CF02784A639005C2E5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CEF2784A639005C2E5C /* Constants.swift */; };
@@ -67,6 +69,7 @@
 		04938FBE27A3FCD2003254E1 /* CollectionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsResponse.swift; sourceTree = "<group>"; };
 		04938FC027A3FDFF003254E1 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		04938FC227A40045003254E1 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		407A61E927D6365A00A2A27B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		448D0CE92784A296005C2E5C /* AudioContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioContentProvider.swift; sourceTree = "<group>"; };
 		448D0CEC2784A2FC005C2E5C /* SignedCookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedCookie.swift; sourceTree = "<group>"; };
 		448D0CEF2784A639005C2E5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407A61E427CD3FC900A2A27B /* AppAuth in Frameworks */,
+				407A61E627CD3FC900A2A27B /* AppAuthCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,7 @@
 		04113A7C270DEE0F00084662 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				407A61E927D6365A00A2A27B /* Info.plist */,
 				04938FBB27A3F34D003254E1 /* API */,
 				04113A7D270DEE0F00084662 /* DemoApp.swift */,
 				A3D0D69827A430C80043FA65 /* Screens */,
@@ -220,6 +226,10 @@
 			dependencies = (
 			);
 			name = App;
+			packageProductDependencies = (
+				407A61E327CD3FC900A2A27B /* AppAuth */,
+				407A61E527CD3FC900A2A27B /* AppAuthCore */,
+			);
 			productName = App;
 			productReference = 04113A7A270DEE0F00084662 /* App.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +302,9 @@
 				Base,
 			);
 			mainGroup = 04113A71270DEE0F00084662;
+			packageReferences = (
+				407A61E227CD3FC900A2A27B /* XCRemoteSwiftPackageReference "AppAuth-iOS" */,
+			);
 			productRefGroup = 04113A7B270DEE0F00084662 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -514,6 +527,7 @@
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -544,6 +558,7 @@
 				DEVELOPMENT_TEAM = H924AL34KG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -699,6 +714,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		407A61E227CD3FC900A2A27B /* XCRemoteSwiftPackageReference "AppAuth-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openid/AppAuth-iOS";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		407A61E327CD3FC900A2A27B /* AppAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 407A61E227CD3FC900A2A27B /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuth;
+		};
+		407A61E527CD3FC900A2A27B /* AppAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 407A61E227CD3FC900A2A27B /* XCRemoteSwiftPackageReference "AppAuth-iOS" */;
+			productName = AppAuthCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04113A72270DEE0F00084662 /* Project object */;
 }

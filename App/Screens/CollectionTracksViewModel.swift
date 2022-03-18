@@ -1,4 +1,6 @@
 import Foundation
+import AppAuthCore
+import AppAuth
 
 
 class CollectionTracksViewModel: ObservableObject {
@@ -7,10 +9,36 @@ class CollectionTracksViewModel: ObservableObject {
     let collectionTitle: String
     let tracks: [Track]?
     @Published var hlsTrackResponse: HLSTrackResponse? = nil
+    private var userAgentSession: OIDExternalUserAgentSession?
+    private var oidAgent: OIDExternalUserAgentIOS? = nil
 
     internal init(collectionTitle: String, tracks: [Track]?) {
         self.collectionTitle = collectionTitle
         self.tracks = tracks
+        
+        self.auth()
+    }
+    
+    func auth() {
+        let authorizationEndpoint = URL(string: "https://dev-auth-keycloak.epidemicsite.com/auth/realms/partner/protocol/openid-connect/auth")!
+        let tokenEndpoint = URL(string: "https://dev-auth-keycloak.epidemicsite.com/auth/realms/partner/protocol/openid-connect/token")!
+        let configuration = OIDServiceConfiguration(authorizationEndpoint: authorizationEndpoint,
+                                                    tokenEndpoint: tokenEndpoint)
+        
+        let request = OIDAuthorizationRequest(configuration: configuration,
+clientId: "partner-client-with-pkce",
+                                              clientSecret: nil,
+                                              scopes: nil,
+                                              redirectURL: URL(string: "com.epidemicsound.partner-content-api-demo-ios:/oauthredirect")!,
+                                              responseType: OIDResponseTypeCode,
+                                              additionalParameters: nil)
+        // performs authentication request
+        print("Initiating authorization request with scope: \(request.scope ?? "nil")")
+        
+        oidAgent = OIDExternalUserAgentIOS(presenting: getHostingViewController())
+        DispatchQueue.main.async {
+            self.userAgentSession = OIDAuthorizationService.present(request, externalUserAgent: self.oidAgent!, callback: self.handleAuthorizationResponse)
+        }
     }
 
     func didSelectTrack(track: Track) {
@@ -46,5 +74,25 @@ class CollectionTracksViewModel: ObservableObject {
                 }
             }
         )
+    }
+
+    private func getHostingViewController() -> UIViewController {
+        return UIApplication.shared.windows.first!.rootViewController!
+    }
+
+    private func handleAuthorizationResponse(authorizationResponse: Optional<OIDAuthorizationResponse>, error: Optional<Error>) {
+        print("Hello \(error)")
+        print("Response \(authorizationResponse)")
+        guard let tokenRequest = authorizationResponse?.tokenExchangeRequest() else {
+            print("No token request!")
+            return
+        }
+            
+        DispatchQueue.main.async {
+            OIDAuthorizationService.perform(tokenRequest) { tokenResponse, error in
+                print("Token response \(tokenResponse)")
+                print("Token response error \(error)")
+            }
+        }
     }
 }

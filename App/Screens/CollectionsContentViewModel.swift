@@ -4,13 +4,11 @@ class CollectionsContentViewModel: ObservableObject {
     let content = "Collections"
     @Published var subTitle = "0"
     @Published var collectionsResponse: CollectionsResponse? = nil
-    
-    init() {
-        getCollections()
-    }
+    @Published var accessToken: String? = nil
     
     func getCollections() {
         PartnerContentAPI().getCollections(
+            accessToken: self.accessToken,
             collectionsCompletionHandler: {
                 collectionsResponse, error in
                 
@@ -21,10 +19,6 @@ class CollectionsContentViewModel: ObservableObject {
                     DispatchQueue.main.async {
                         self.collectionsResponse = collectionsResponse
                     }
-                    
-                    
-                    print("loaded")
-                    print(self.collectionsResponse)
                 }
             }
         )
@@ -36,8 +30,15 @@ class CollectionsContentViewModel: ObservableObject {
     func createCollectionTracksViewModel( for collection: Collection) -> CollectionTracksViewModel {
 
         return CollectionTracksViewModel(collectionTitle: collection.name, tracks: collection.tracks)
-        
-        
     }
     
+    func auth() {
+        AuthService(onSuccess: setAccessToken).auth()
+    }
+    
+    func setAccessToken(accessToken: String) {
+        self.accessToken = accessToken
+        getCollections()
+    }
+
 }

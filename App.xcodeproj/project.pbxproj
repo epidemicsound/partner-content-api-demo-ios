@@ -31,6 +31,7 @@
 		448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D0CF32784B055005C2E5C /* TrackResource.swift */; };
 		A3D0D69727A430870043FA65 /* CollectionTracksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0D69627A430870043FA65 /* CollectionTracksView.swift */; };
 		A3D0D69A27A431FD0043FA65 /* CollectionTracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */; };
+		FAD5CFC027E4AAAB0033C3D6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5CFBF27E4AAAA0033C3D6 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		448D0CF32784B055005C2E5C /* TrackResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackResource.swift; sourceTree = "<group>"; };
 		A3D0D69627A430870043FA65 /* CollectionTracksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTracksView.swift; sourceTree = "<group>"; };
 		A3D0D69927A431FD0043FA65 /* CollectionTracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTracksViewModel.swift; sourceTree = "<group>"; };
+		FAD5CFBF27E4AAAA0033C3D6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		04113A7C270DEE0F00084662 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FAD5CFBE27E4AA570033C3D6 /* Auth */,
 				407A61E927D6365A00A2A27B /* Info.plist */,
 				04938FBB27A3F34D003254E1 /* API */,
 				04113A7D270DEE0F00084662 /* DemoApp.swift */,
@@ -208,6 +211,14 @@
 				448D0CF12784A8D0005C2E5C /* ContentViewModel.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAD5CFBE27E4AA570033C3D6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FAD5CFBF27E4AAAA0033C3D6 /* AuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +361,7 @@
 				04113A80270DEE0F00084662 /* ContentView.swift in Sources */,
 				448D0CED2784A2FC005C2E5C /* SignedCookie.swift in Sources */,
 				448D0CEA2784A296005C2E5C /* AudioContentProvider.swift in Sources */,
+				FAD5CFC027E4AAAB0033C3D6 /* AuthService.swift in Sources */,
 				04938FB827A3F1BA003254E1 /* CollectionsContentView.swift in Sources */,
 				448D0CF42784B055005C2E5C /* TrackResource.swift in Sources */,
 				448D0CF22784A8D0005C2E5C /* ContentViewModel.swift in Sources */,

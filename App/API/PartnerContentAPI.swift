@@ -10,7 +10,7 @@ struct PartnerContentAPI {
             return
         }
         
-        if let url = URL(string: "http://localhost:8000/v0/collections") {
+        if let url = URL(string: "https://partner-content-api-dev.epidemicsite.com/v0/collections") {
             var request = URLRequest(url: url)
             request.addValue("Bearer " + accessToken!, forHTTPHeaderField: "Authorization")
             let session = URLSession.shared
@@ -35,9 +35,8 @@ struct PartnerContentAPI {
 
     func getHLSTrack(accessToken: String?, id: String, hlsTrackCompletionHandler: @escaping (HLSTrackResponse?, Error?) -> Void) {
 
-        if let url = URL(string: "http://localhost:8000/v0/tracks/\(id)/hls") {
+        if let url = URL(string: "https://partner-content-api-dev.epidemicsite.com/v0/tracks/\(id)/hls") {
             var request = URLRequest(url: url)
-            //request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
             request.addValue("Bearer " + accessToken!, forHTTPHeaderField: "Authorization")
             let session = URLSession.shared
 
